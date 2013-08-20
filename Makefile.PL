@@ -73,7 +73,7 @@ WriteMakefile(
     resources     => {
       license     => 'http://dev.perl.org/licenses/',
       repository  => (
-        'https://poe.svn.sourceforge.net/svnroot/poe/trunk/polo-event'
+        'https://github.com/rcaputo/poe-loop-event.git'
       ),
     },
   },

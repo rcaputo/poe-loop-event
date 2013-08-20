@@ -243,8 +243,9 @@ L<POE>, L<POE::Loop>, L<Event>, L<POE::Loop::PerlSignals>
 
 =head1 AUTHORS & LICENSING
 
-Please see L<POE> for more information about authors, contributors,
-and POE's licensing.
+POE::Loop::Event is Copyright 1998-2013 Rocco Caputo.  All rights
+reserved.  POE::Loop::Event is free software; you may redistribute it
+and/or modify it under the same terms as Perl itself.
 
 =cut
 
