@@ -81,8 +81,8 @@ WriteMakefile(
     COMPRESS      => 'gzip -9f',
     SUFFIX        => 'gz',
     PREOP         => (
-      'svn-log.perl --tags ^ple- | ' .
-      '/usr/bin/tee ./$(DISTNAME)-$(VERSION)/CHANGES > ./CHANGES'
+      'git-log.pl | ' .
+      '/usr/bin/tee ./$(DISTNAME)-$(VERSION)/CHANGES > ./CHANGES; '
     ),
   },
   clean           => { FILES => 't/poe_loop_event/*.t t/poe_loop_event ' . $marker },
@@ -90,18 +90,18 @@ WriteMakefile(
 
   CONFIGURE_REQUIRES => {
     'ExtUtils::MakeMaker' => 0,
-    'POE::Test::Loops'    => 1.035,
+    'POE::Test::Loops'    => 1.352,
   },
 
   META_MERGE      => {
     build_requires => {
-      'POE::Test::Loops'    => 1.035,
+      'POE::Test::Loops'    => 1.352,
     },
   },
 
   PREREQ_PM       => {
-    'POE'               => 1.289,
-    'Event'             => 1.13,
+    'POE'               => 1.356,
+    'Event'             => 1.21,
   },
 );
 
