@@ -231,7 +231,15 @@ POE::Loop::Event - a bridge that allows POE to be driven by Event.pm
 
 See L<POE::Loop>.
 
+  use Event;
+  use POE;
+
+  # Rest of your program here.
+
 =head1 DESCRIPTION
+
+POE::Loop::Event replaces POE's internal event loop with the Event module.
+This allows programs to use both POE and Event at the same time.
 
 POE::Loop::Event implements the interface documented in L<POE::Loop>.
 Therefore it has no documentation of its own.  Please see L<POE::Loop>
